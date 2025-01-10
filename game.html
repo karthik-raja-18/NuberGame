@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+
+    <style>
+    
+        body {
+            background-color: #0a0a0a; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+        }
+    
+        #guessInput {
+            padding: 10px 60px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        #btn {
+            padding: 10px 70px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #900c0f;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #btn:hover {
+            background-color: rgb(2, 122, 2);
+        }
+        
+        #img {
+            justify-content: center;
+            margin-top: 5px;
+            transition: transform 0.5s ease;
+            display: flex;
+        }
+        
+        #msg {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <center>
+            <b><h2>Guess The Number & Won The Loot!</h2></b>
+            <p>Guess the number between 1 to 10</p>
+            <p id="cnt"></p>
+            <input type="number" id="guessInput" min="1" max="10">
+            <button id="btn">Check</button>
+            <img id="img" src="lock.png" alt="" width="720" height="480">
+            <p id="msg"></p>
+            <script src="game.js"></script>
+        </center>
+    </body>
+    
